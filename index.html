@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>CodersCamp | Projekt 1 - HTML i CSS</title>
+    <meta name="Author" content="Patryk Budnicki" />
+    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <link rel="Stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<div class="main-container">
+    <header class="page-header">
+        <nav class="navigation">
+            <ul class="navigation__items">
+                <li class="navigation__item">
+                    <a href="#aboutMe" class="navigation__link" rel="nofollow">About me</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#skills" class="navigation__link" rel="nofollow">Skills</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#portfolio" class="navigation__link" rel="nofollow">Portfolio</a>
+                </li>
+                <li class="navigation__item">
+                    <a href="#contact" class="navigation__link" rel="nofollow">Contact</a>
+                </li>
+            </ul>
+            <div class="logo">
+                <a class="logo__link" href="#"><i class="fas fa-laptop-code"></i> Dev</a>
+            </div>
+        </nav>
+        <div class="baner">
+            <img class="baner__photo" src="images/cover_photo.png"/>
+            <img class="baner__layer" src="images/cover_layer.png"/>
+            <div class="baner-text">
+                <h1 class="baner-text__header">Welcome!</h1>
+                <p class="baner-text__paragraph">My name is Patryk.</p>
+                <p class="baner-text__icons">
+                    <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-twitter-square icon-color"></i></a>
+                    <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-linkedin icon-color"></i></a>
+                    <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-github-square icon-color"></i></a>
+                    <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-facebook-square icon-color"></i></a>
+                </p>
+            </div>
+        </div>
+        <div class="baner-contact">
+           <p class="baner-contact__paragraph">I am happy to help you with any problem!</p>
+            <button class="baner-contant__button">Contact me!</button>
+            <a href="/images/cv.pdf" class="baner-contact__link" download>
+                <p class="baner-contact__plink">Check my CV</p>
+            </a>
+        </div>
+    </header>
+</div>
+<div class="main-wrapper">
+    <main class="main-section">
+        <div id="aboutMe" class="about-me">
+            <h3 class="about-me__header">About Me</h3>
+            <div class="about-info">
+                <div class="about-photo">
+                </div>
+                <div class="about-details">
+                    <ul class="about-details__list">
+                        <li class="about-details__item">
+                            <span class="about-details__span">Full Name:</span> Patryk Budnicki
+                        </li>
+                        <li class="about-details__item">
+                            <span class="about-details__span">Age:</span> 25 Years
+                        </li>
+                        <li class="about-details__item">
+                            <span class="about-details__span">Profile:</span> Front-end Developer
+                        </li>
+                        <li class="about-details__item">
+                           <span class="about-details__span">Telephone:</span> <a class="about-details__link" href="tel:+48503758919">+48 503 758 919</a>
+                        </li>
+                        <li class="about-details__item">
+                            <span class="about-details__span">E-mail:</span> <a class="about-details__link" href="mailto:p.budnicki95@gmail.com">p.budnicki95@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="about-description">
+                    <p>
+                        Programming is my passion. Developing my skills and solving algorithmic problems gives me a lot of fun. I started learning front-end technologies in April. I feel great in creating responsive views or creating applications in React.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div id="skills" class="skills">
+            <div class="skills-back">
+                <h3 class="skills__header">Skills</h3>
+                <div class="skills-info">
+                    <div class="skills-item">
+                        <img src="./images/icon_UxUi.png" alt="Ux/Ui">
+                        <p class="skills-item__header">UX/UI</p>
+                        <p class="skills-item__paragraph">Figma</p>
+                    </div>
+                    <div class="skills-item">
+                        <img src="./images/icon_frontend.png" alt="front-end">
+                        <p class="skills-item__header">Front End</p>
+                        <p class="skills-item__paragraph">Html, CSS, Javascript</p>
+                    </div>
+                    <div class="skills-item">
+                        <i class="fab fa-react"></i>
+                        <p class="skills-item__header">React</p>
+                        <p class="skills-item__paragraph">Hooks, Router</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="portfolio" class="portfolio">
+            <h3 class="portfolio__header">Portfolio</h3>
+            <div class="portfolio-items">
+                <div class="calc ">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-hover__header">Javascript Calculator</h4>
+                            <p class="portfolio-hover__paragraph">Advenced Calculator, check its capabilities!</p> 
+                            <p class="portfolio-hover__paragraph">Used Technology: HTML, Javascript, React, Hooks, grid, sass</p>
+                        </div>
+                        <div class="portfolio-buttons">
+                            <a class="portfolio-hover__live" href="https://budnickip.github.io/javascriptCalc/" rel="nofollow">View Live</a>
+                            <a class="portfolio-hover__code" href="https://github.com/budnickip/javascriptCalc" rel="nofollow">View Code</a>
+                        </div>
+                    </div>
+                    <img src="./images/calc.PNG" class="portfolio-items__image">
+                </div>
+                <div class="toDoList ">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-hover__header">To Do List</h4>
+                            <p class="portfolio-hover__paragraph">Simple toDoList created to learn React.</p> 
+                            <p class="portfolio-hover__paragraph">Used Technology: HTML, JavaScript, React, StyledComponents</p>
+                        </div>
+                        <div class="portfolio-buttons">
+                            <a class="portfolio-hover__live" href="https://budnickip.github.io/todolistreact/" rel="nofollow">View Live</a>
+                            <a class="portfolio-hover__code" href="https://github.com/budnickip/todolistreact" rel="nofollow">View Code</a>
+                        </div>
+                    </div>
+                    <img src="./images/toDoList.PNG" class="portfolio-items__image">
+                </div>
+                <div class="drumMachine ">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-hover__header">Drum Machine</h4>
+                            <p class="portfolio-hover__paragraph">You can play music with your buttons, change board and volume.</p> 
+                            <p class="portfolio-hover__paragraph">Used Technology: HTML, React, SCSS, Bootstrap, React Hooks</p>
+                        </div>
+                        <div class="portfolio-buttons">
+                            <a class="portfolio-hover__live" href="https://budnickip.github.io/drummachine/" rel="nofollow">View Live</a>
+                            <a class="portfolio-hover__code" href="https://github.com/budnickip/drummachine" rel="nofollow">View Code</a>
+                        </div>
+                    </div>
+                    <img src="./images/drumMachine.PNG" class="portfolio-items__image">
+                </div>
+                <div class="stopwatch ">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-description">
+                                <h4 class="stopwatch-hover__header">Stopwatch</h4>
+                                <p class="stopwatch-hover__paragraph">Timer is using SetInterval and Stopwatch is using performance.now()</p> 
+                                <p class="stopwatch-hover__paragraph">Used Technology: React, Hooks, Router, Flex</p>
+                            </div>
+                            <div class="stopwatch-buttons">
+                                <a class="stopwatch-hover__live" href="https://budnickip.github.io/stopwatch/" rel="nofollow">View Live</a>
+                                <a class="stopwatch-hover__code" href="https://github.com/budnickip/stopwatch" rel="nofollow">View Code</a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/stopwatch.PNG" class="portfolio-items__image">
+                </div>
+                <div class="zonex ">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-description">
+                            <h4 class="portfolio-hover__header">Mackup Zonex Shop</h4>
+                            <p class="portfolio-hover__paragraph">It's advenced Mackup from Zonex Shop, all data are downloaded
+                                from API.
+                            </p> 
+                            <p class="portfolio-hover__paragraph">Used Technology: HTML, Javascript, AJAX, Sass, Bootstrap, Glider.js</p>
+                        </div>
+                        <div class="portfolio-buttons">
+                            <a class="portfolio-hover__live" href="https://budnickip.github.io/daft2020/dist/" rel="nofollow">View Live</a>
+                            <a class="portfolio-hover__code" href="https://github.com/budnickip/daft2020" rel="nofollow">View Code</a>
+                        </div>
+                    </div>
+                    <img src="./images/zonex.PNG" class="portfolio-items__image">
+                </div>
+            </div>
+        </div>
+        <!--W contact coś się rozjeżdża-->
+        <div id="contact" class="contact">
+            <h3 class="contact__header">Contact us</h3>
+            <div class="contact-box">
+                <div class="contact-details">
+                    <div class="contact-text">
+                        <i class="fas fa-paper-plane"></i>
+                        <p class="contact-text__paragraph">Please describe your question.</p>
+                        <p class="contact-text__paragraph">Send me a message and I will</p>
+                        <p class="contact-text__paragraph">answer you as soon as possible!</p>
+                    </div>
+                    <div class="contact-adress">
+                        <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-twitter-square contact-adress__icon"></i></a>
+                        <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-linkedin contact-adress__icon"></i></a>
+                        <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-github-square contact-adress__icon"></i></a>
+                        <a href="https://github.com/budnickip" target="_blank"><i class="fab fa-facebook-square contact-adress__icon"></i></a>
+                        <p class="contact-adress__paragraphB">Patryk Budnicki</p>
+                        <p class="contact-adress__paragraphB">Poland, Szczecin</p>
+                        <p class="contact-adress__paragraph">ul. Kwiatkowskiego **/** 71-004</p>
+                        <a class="contact-adress__link" href="tel:+48503758919">+48 503 758 919</a>
+                        <a class="contact-adress__link" href="mailto:p.budnicki95@gmail.com">p.budnicki95@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <h4 class="contact-form__header">Let's start!</h4>
+                    <form class="contact-form__form">
+                        <input class="contact-form__input" type="text" name="name" id="name" placeholder="Name" required>
+                        <input class="contact-form__input" type="email" name="email" id="email" placeholder="Your e-mail adress" required>
+                        <input class="contact-form__input" type="text" name="topic" id="topic" placeholder="Topic" required>
+                        <textarea class="contact-form__textarea" placeholder="Message"></textarea>
+                        <button class="contact-form__button" type="submit">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--na mobilce ten trójkącik daj w dół-->
+
+    </main>
+</div>
+<div class="footer-wrapper">
+    <footer class="footer">
+        <p>Copyright &copy; 2020 CodersCrew </p>
+    </footer>
+</div>
+
+<script src="https://kit.fontawesome.com/e893ce96a4.js" crossorigin="anonymous"></script>
+</body>
+</html>
