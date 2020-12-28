@@ -117,8 +117,6 @@
         display: flex;
     }
     .navigation__items{
-        position: relative;
-        top: -300px;
         display: none;
         flex-direction: column;
         align-items: center;
