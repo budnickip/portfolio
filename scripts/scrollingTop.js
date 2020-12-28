@@ -1,13 +1,13 @@
 const scrollingTop = () =>{
     const vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    var target = document.querySelector('.arrow-top');
+    let target = document.querySelector('.arrow-top');
     window.addEventListener("scroll",function(){
-    if(window.pageYOffset >= vh*0.5){
-    target.style.display = "flex";
-    }
-    else if(window.pageYOffset < vh*0.5){
-        target.style.display = "none";
-    }
+        if(window.pageYOffset >= vh*0.5){
+            target.style.display = "flex";
+        }
+        else if(window.pageYOffset < vh*0.5){
+            target.style.display = "none";
+        }
     },false); 
 
 
