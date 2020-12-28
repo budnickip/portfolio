@@ -16,7 +16,7 @@
 
 .menu-btn{
     position: relative;
-    display: flex;
+    display: none;
     justify-content: center;
     width: 40px;
     height: 30px;
@@ -110,4 +110,36 @@
 .logo__link{
     color: var(--blacktext, black);
     text-decoration: none;
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .menu-btn{
+        display: flex;
+    }
+    .navigation__items{
+        position: relative;
+        top: -300px;
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navigation__items.active{
+        display: flex;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .menu-btn{
+        display: flex;
+    }
+    .navigation__items{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .navigation__items.active{
+        display: flex;
+    }
 }

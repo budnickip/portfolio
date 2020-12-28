@@ -1,13 +1,10 @@
 @media (min-width: 1px) and (max-width: 480px) {
     .navigation{
         position: static;
-        justify-content: center;
+        justify-content: space-between;
     }
     .logo{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 10px 5px;
+        width: 80%;
     }
     .navigation__item{
         padding: 10px 15px;
@@ -118,13 +115,10 @@
 @media (min-width: 481px) and (max-width: 768px){
     .navigation{
         position: static;
-        justify-content: center;
+        justify-content: space-between;
     }
     .logo{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        padding: 10px 5px;
+        width: 80%;
     }
     .navigation__item{
         padding: 10px 15px;
