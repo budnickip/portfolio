@@ -1,6 +1,7 @@
 const menu = () =>{
     const menuBtn = document.querySelector('.menu-btn')
     const navbarLinks = document.querySelector('.navigation__items')
+    const navbarLink = document.querySelectorAll('.navigation__item')
     let menuOpen = false
 
     menuBtn.addEventListener('click', ()=>{
@@ -13,6 +14,16 @@ const menu = () =>{
             navbarLinks.classList.remove('active')
             menuOpen = false
         }
+    })
+
+    navbarLink.forEach(link=>{
+        link.addEventListener('click', ()=>{
+            if(menuOpen){
+                menuBtn.classList.remove('open')
+                navbarLinks.classList.remove('active')
+                menuOpen = false
+            }
+        })
     })
 }
 
