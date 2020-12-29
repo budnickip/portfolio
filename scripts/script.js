@@ -17,3 +17,13 @@ window.addEventListener('scroll',()=>{
         aboutPhoto.classList.add('activePhoto')
     }
 })  
+
+window.addEventListener('scroll', ()=>{
+    const skillsItem = document.querySelectorAll('.skills-item__img')
+
+    skillsItem.forEach(skill => {
+        if(skill.getBoundingClientRect().top < window.innerHeight){
+            skill.classList.add('activeSkill')
+        }
+    })
+})

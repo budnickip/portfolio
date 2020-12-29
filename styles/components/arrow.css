@@ -8,7 +8,6 @@
     border-radius: 50%;
     background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
     color: white;
-    display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;

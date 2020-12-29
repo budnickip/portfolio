@@ -34,6 +34,16 @@
     padding-top: 25px;
 }
 
+.skills-item__img{
+    opacity: 0;
+    transform: translateX(100px);
+    transition: 1s;
+}
+.activeSkill{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
 .skills-item:nth-child(2){
     border-right: 4px dashed var(--ornaments, orange);
     border-left: 4px dashed var(--ornaments, orange);
