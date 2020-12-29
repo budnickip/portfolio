@@ -36,7 +36,7 @@
 
 .skills-item__img{
     opacity: 0;
-    transform: translateX(100px);
+    transform: translateX(30px);
     transition: 1s;
 }
 .activeSkill{
