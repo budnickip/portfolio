@@ -34,6 +34,13 @@
     background-repeat: no-repeat; 
     border-radius: 50%;
     padding-bottom: 20px;
+    opacity: 0;
+    transform:translateX(-100px);
+    transition: 1s;
+}
+.activePhoto{
+    opacity: 1;
+    transform: translateX(0px);
 }
 
 .about-details{
