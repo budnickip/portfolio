@@ -1,8 +1,9 @@
 const hideNavbar = () => {
-    let lastScrollTop = 2;
+    let lastScrollTop = 100;
     const navbar = document.querySelector('.navigation');
     window.addEventListener("scroll", function(){
         let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        console.log(scrollTop)
         if(scrollTop > lastScrollTop){
             navbar.style.top="-100px";
         } else {
