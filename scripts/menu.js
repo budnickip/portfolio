@@ -2,7 +2,24 @@ const menu = () =>{
     const menuBtn = document.querySelector('.menu-btn')
     const navbarLinks = document.querySelector('.navigation__items')
     const navbarLink = document.querySelectorAll('.navigation__item')
+    const navbar = document.querySelector('.navigation')
+
+
+    let lastScrollTop = 0;
     let menuOpen = false
+
+    window.addEventListener("scroll", function(){
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        if(scrollTop > lastScrollTop){
+            if(menuOpen){
+                menuBtn.classList.remove('open')
+                navbarLinks.classList.remove('active')
+                menuOpen = false
+            }
+        }
+        lastScrollTop = scrollTop;
+    });
+
 
     menuBtn.addEventListener('click', ()=>{
         if(!menuOpen){
