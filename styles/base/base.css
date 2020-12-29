@@ -9,4 +9,5 @@ body{
     color: var(--customtext, black);
     font-size: 18px;
     font-family: 'Raleway', sans-serif;
+    width: 100%;
 }
