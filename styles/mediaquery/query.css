@@ -8,9 +8,6 @@
     .navigation__item{
         padding: 10px 15px;
     }
-    .baner{
-        margin-top: 0px;
-    }
     .baner-text{
         font-size: 10px;
         top: 5px;
@@ -120,9 +117,6 @@
     }
     .navigation__item{
         padding: 10px 15px;
-    }
-    .baner{
-        margin-top: 0px;
     }
     .baner-text{
         font-size: 12px;
