@@ -1,6 +1,7 @@
 @media (min-width: 1px) and (max-width: 480px) {
     .navigation{
         justify-content: space-between;
+        padding: 15px 0px;
     }
     .logo{
         width: 80%;
@@ -111,6 +112,7 @@
 @media (min-width: 481px) and (max-width: 768px){
     .navigation{
         justify-content: space-between;
+        padding: 15px 0px;
     }
     .logo{
         width: 80%;
