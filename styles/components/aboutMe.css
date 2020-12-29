@@ -29,7 +29,9 @@
 .about-photo{
     width: 150px;
     height: 150px;
-    background-image: url("/images/myphoto.jpg");
+    /* only for github*/
+    background-image: url("https://budnickip.github.io/portfolio/images/myphoto.jpg");
+    /*background-image: url("/images/myphoto.jpg"); */
     background-size: contain;
     background-repeat: no-repeat; 
     border-radius: 50%;
