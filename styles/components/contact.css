@@ -19,8 +19,11 @@
 
 .contact-box{
     width: 80%;
-    display: flex;
-    flex-wrap: wrap;
+  /*  display: flex;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
     -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
     box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
@@ -28,7 +31,7 @@
 
 .contact-details{
     background-color: var(--contactorange, orange);
-    width: 450px;
+  /*  width: 450px; */
     padding-bottom: 35px;
     display: flex;
     flex-direction: column;
@@ -93,8 +96,8 @@
 
 .contact-form{
     background-color: white;
-    width: 400px;
-    flex-grow: 1;
+    /*width: 400px;
+    flex-grow: 1; */
 }
 
 .contact-form__header{
