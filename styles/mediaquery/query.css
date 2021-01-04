@@ -91,8 +91,14 @@
         right: unset;
         top: unset;
     }
+    .fa-paper-plane{
+        font-size: 30px;
+        padding: 20px 0px 20px 0px;
+    }
     .contact-box{
         width: 90%;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 100%;
     }
     .contact-text{
         padding: 0px 0px 2em 34px;
@@ -196,7 +202,6 @@
         left: -37%;
         padding: 10px;
     }
-
     .contact-details::before{
         bottom: -20px;
         left: 32px;
@@ -205,9 +210,15 @@
     }
     .contact-box{
         width: 90%;
+        grid-template-rows: 40% 60%;
+        grid-template-columns: 100%;
     }
     .contact-text{
         padding: 0px 0px 2em 34px;
+    }
+    .fa-paper-plane{
+        font-size: 30px;
+        padding: 20px 0px 20px 0px;
     }
     .contact-adress{
         padding-left: 34px;
