@@ -78,3 +78,29 @@
     width: 70%;
     padding-bottom: 75px;
 }
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .skills-item:nth-child(2){
+        border-right-color: white;
+        border-left-color: white;
+    }
+    .skills-info{
+        width: 90vw;
+        padding: 10px;
+        left: -36%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .skills-item:nth-child(2){
+        border-right-color: white;
+        border-left-color: white;
+    }
+
+    .skills-info{
+        width: 90vw;
+        left: -37%;
+        padding: 10px;
+    }
+
+}

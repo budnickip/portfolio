@@ -170,3 +170,23 @@ znalazłem inne, działające rozwiązanie*/
 .baner-contact__link:hover::before, .baner-contact__link:focus::before {
     animation: btn-contact 1s forwards;
 }
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .baner-text{
+        font-size: 10px;
+        top: 5px;
+    }
+    .baner-text__header{
+        line-height: 3rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .baner-text{
+        font-size: 12px;
+        top: 5px;
+    }
+    .baner-text__header{
+        line-height: 5rem;
+    }
+}

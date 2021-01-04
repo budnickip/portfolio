@@ -71,3 +71,29 @@
     padding: 20px 0px 20px 20px;
     flex-grow: 1;
 }
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .about-details{
+        border-right-color: white;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .about-details{
+        border-right-color: white;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+}

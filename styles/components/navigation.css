@@ -127,9 +127,28 @@
     .navigation__items.active{
         display: flex;
     }
+
+    .navigation{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 80%;
+    }
+    .navigation__item{
+        padding: 10px 15px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
+    .navigation{
+        justify-content: space-between;
+    }
+    .logo{
+        width: 80%;
+    }
+    .navigation__item{
+        padding: 10px 15px;
+    }
     .menu-btn{
         display: flex;
     }

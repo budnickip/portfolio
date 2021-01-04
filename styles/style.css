@@ -14,6 +14,3 @@
 @import './base/base.css';
 
 @import './abstracts/variables.css';
-
-
-@import './mediaquery/query.css';
