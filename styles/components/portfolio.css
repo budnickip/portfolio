@@ -265,23 +265,35 @@
 
 @media (min-width: 1px) and (max-width: 480px) {
     .portfolio-items{
-        display: flex;
-        flex-wrap: wrap;
+    /*    display: flex;
+        flex-wrap: wrap; */
+        grid-template-columns: 100%;
+        grid-template-rows: 360px 360px 360px 360px 360px;
     }
     .calc{
         width: 100%;
+        grid-column: 1;
+        grid-row: 1;
     }
     .toDoList{
         width: 100%;
+        grid-column: 1;
+        grid-row: 2;
     }
     .drumMachine{
         width: 100%;
+        grid-column: 1;
+        grid-row: 3;
     }
     .stopwatch{
         width: 100%;
+        grid-column: 1;
+        grid-row: 4;
     }
     .zonex{
         width: 100%;
+        grid-column: 1;
+        grid-row: 5;
     }
     .portfolio-items__image{
         display: block;
@@ -289,6 +301,7 @@
     }
     .portfolio-hover{
         opacity: 1;
+        height: 100%;
         background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
     }
     .portfolio-hover__header{
@@ -320,23 +333,35 @@
 
 @media (min-width: 481px) and (max-width: 768px){
     .portfolio-items{
-        display: flex;
-        flex-wrap: wrap;
+       /* display: flex;
+        flex-wrap: wrap; */
+        grid-template-columns: 100%;
+        grid-template-rows: 360px 360px 360px 360px 360px;
     }
     .calc{
         width: 100%;
+        grid-column: 1;
+        grid-row: 1;
     }
     .toDoList{
         width: 100%;
+        grid-column: 1;
+        grid-row: 2;
     }
     .drumMachine{
         width: 100%;
+        grid-column: 1;
+        grid-row: 3;
     }
     .stopwatch{
         width: 100%;
+        grid-column: 1;
+        grid-row: 4;
     }
     .zonex{
         width: 100%;
+        grid-column: 1;
+        grid-row: 5;
     }
     .portfolio-items__image{
         display: block;
@@ -345,6 +370,7 @@
 
     .portfolio-hover{
         opacity: 1;
+        height: 100%;
         background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
     }
     .portfolio-hover__header{
@@ -375,29 +401,40 @@
 
 @media (min-width: 769px) and (max-width: 1024px){
     .portfolio-items{
-        display: flex;
-        flex-wrap: wrap;
+       /* display: flex;
+        flex-wrap: wrap; */
+        grid-template-columns: 100%;
+        grid-template-rows: 360px 360px 360px 360px 360px;
     }
     .calc{
         width: 100%;
+        grid-column: 1;
+        grid-row: 1;
     }
     .toDoList{
         width: 100%;
+        grid-column: 1;
+        grid-row: 2;
     }
     .drumMachine{
         width: 100%;
+        grid-column: 1;
+        grid-row: 3;
     }
     .stopwatch{
         width: 100%;
+        grid-column: 1;
+        grid-row: 4;
     }
     .zonex{
         width: 100%;
+        grid-column: 1;
+        grid-row: 5;
     }
     .portfolio-items__image{
         display: block;
         max-width: 100%;
     }
-    
 
 }
 
