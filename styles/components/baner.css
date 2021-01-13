@@ -181,26 +181,26 @@ znalazłem inne, działające rozwiązanie*/
 }
 
 @media (min-width: 1px) and (max-width: 480px) {
-    .baner-text{
+   /*  .baner-text{
         font-size: 10px;
-        /*top: 5px; */
+        /*top: 5px; 
     }
     .baner-text__header{
         line-height: 3rem;
-    }
+    } */
     .baner{
         height: 70vh;
     }
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-    .baner-text{
+   /* .baner-text{
         font-size: 12px;
-       /* top: 5px; */
+        top: 5px; 
     }
     .baner-text__header{
         line-height: 5rem;
-    }
+    } */
     .baner{
         height: 70vh;
     }
