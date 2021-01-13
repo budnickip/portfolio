@@ -184,10 +184,11 @@ znalazłem inne, działające rozwiązanie*/
    /*  .baner-text{
         font-size: 10px;
         /*top: 5px; 
-    }
+    } */
     .baner-text__header{
         line-height: 3rem;
-    } */
+        font-size: 4em;
+    } 
     .baner{
         height: 70vh;
     }
@@ -197,10 +198,11 @@ znalazłem inne, działające rozwiązanie*/
    /* .baner-text{
         font-size: 12px;
         top: 5px; 
-    }
+    } */
     .baner-text__header{
         line-height: 5rem;
-    } */
+        font-size: 4em;
+    } 
     .baner{
         height: 70vh;
     }

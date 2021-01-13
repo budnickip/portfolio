@@ -225,11 +225,11 @@
                 </div>
                <div class="contact-form">
                     <h4 class="contact-form__header">Let's start!</h4>
-                    <form class="contact-form__form" method="post" name="contact_form" action="kontakt.php">
+                    <form class="contact-form__form" name="contact_form">
                         <input class="contact-form__input" type="text" name="name" id="name" placeholder="Name" required>
                         <input class="contact-form__input" type="email" name="email" id="email" placeholder="Your e-mail adress" required>
                         <input class="contact-form__input" type="text" name="topic" id="topic" placeholder="Topic" required>
-                        <textarea class="contact-form__textarea" name="message" placeholder="Message"></textarea>
+                        <textarea class="contact-form__textarea" name="message" id="message" placeholder="Message"></textarea>
                         <button class="contact-form__button" type="submit">Send</button>
                     </form>
                 </div> 
@@ -245,13 +245,6 @@
         <p>Copyright &copy; 2020 CodersCrew </p>
     </footer>
 </div>
-<script language="JavaScript">
-    var frmvalidator  = new Validator("contactform");
-    frmvalidator.addValidation("name","req","Please provide your name");
-    frmvalidator.addValidation("email","req","Please provide your email");
-    frmvalidator.addValidation("email","email",
-      "Please enter a valid email address");
-    </script>
 <script type="module" src="scripts/script.js"></script>
 <script src="https://kit.fontawesome.com/e893ce96a4.js" crossorigin="anonymous"></script>
 </body>

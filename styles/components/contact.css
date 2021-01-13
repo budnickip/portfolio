@@ -16,7 +16,10 @@
     color: var(--customtext, black);
     padding: 17px 0px 27px 15%;
 }
-
+.contact-form__confirmation{
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
 .contact-box{
     width: 80%;
   /*  display: flex;
