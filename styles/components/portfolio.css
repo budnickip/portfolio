@@ -68,6 +68,11 @@
     position: relative;
 }
 
+.portfolio-item:hover .portfolio-hover{
+    opacity: 1;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+}
 
 .portfolio-items__image{
     display: none;
@@ -87,18 +92,11 @@
 } 
 
 
-.portfolio-hover:hover{
+/*.portfolio-hover:hover{
     opacity: 1;
     height: 100%;
     background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
-}
-
-.portfolio-hover__header{
-    color: #ffffff;
-    font-weight: 700;
-    font-size: 2.1em;
-    padding: 25px 0px 10px 36px;
-}
+} */
 
 .portfolio-hover__paragraph{
     word-wrap: break-word; 
@@ -109,158 +107,50 @@
     padding-left: 36px;
 }
 
-.portfolio-hover__live, .portfolio-hover__code{
-    display: inline-block;
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-    text-decoration: none;
-    font-size: 1em;
-    color: white;
-    font-weight: 700;
-    border-radius: 15px;
-    border: none;
-    margin: 10px 40px;
-    width: 200px;
-    padding: 15px 0px 15px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    margin-bottom: 1em;
-}
-
-.portfolio-hover__live::before{
-    content: 'View Live';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: var(--ornaments, orange);
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    border: 1px solid var(--ornaments, orange);
-    border-radius: 15px;
-    background: white;
-}
-
-.portfolio-hover__live:hover::before, .portfolio-hover__live:focus::before, .portfolio-hover__code:hover::before, .portfolio-hover__code:focus::before {
-    animation: btn-details 1s forwards;
-}
-
-@keyframes btn-details {
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-.portfolio-hover__code::before{
-    content: 'View Code';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: var(--ornaments, orange);
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    border: 1px solid var(--ornaments, orange);
-    border-radius: 15px;
-    background: white;
-}
-
-
-
-
-.stopwatch-hover__header{
-    color: #ffffff;
-    max-width: 90%;
-    font-weight: 700;
-    font-size: 1.8em;
-    padding: 25px 0px 10px 16px;
-}
-
-.stopwatch-hover__paragraph{
-    max-width: 80%;
-    word-wrap: break-word; 
-    color: #ffffff;
-    font-size: 0.9em;
-    line-height: 19px;
-    letter-spacing: 0.02em;
-    padding-left: 16px;
-}
-
-.stopwatch-hover__live, .stopwatch-hover__code{
-    display: inline-block;
-    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
-    text-decoration: none;
-    font-size: 0.8em;
-    color: white;
-    font-weight: 600;
-    border-radius: 15px;
-    border: none;
-    margin: 10px 10px;
-    width: 80px;
-    padding: 10px 0px 10px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-}
-
-.stopwatch-hover__live::before{
-    content: 'View Live';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: var(--ornaments, orange);
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    border: 1px solid var(--ornaments, orange);
-    border-radius: 15px;
-    background: white;
-}
-
-.stopwatch-hover__live:hover::before, .stopwatch-hover__live:focus::before, .stopwatch-hover__code:hover::before, .stopwatch-hover__code:focus::before {
-    animation: btn-details 1s forwards;
-}
-
-@keyframes btn-details {
-    100% {
-      opacity: 1;
-    }
-  }
-
-
-  .stopwatch-hover__code::before{
-    content: 'View Code';
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    color: var(--ornaments, orange);
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    border: 1px solid var(--ornaments, orange);
-    border-radius: 15px;
-    background: white;
-}
  /* Na mniejszych rozdzielczościach ustaw taką samą szerokość jak u pozostałych*/
 
-.stopwatch-buttons, .portfolio-buttons{
+/*.stopwatch-buttons, .portfolio-buttons{
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-end;
+} */
+.portfolio-description{
+    margin-top: 2rem;
+}
+.portfolio-footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #515151;
     justify-content: space-between;
+}
+
+.portfolio-footer__header{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    transition: .5s;
+}
+
+.portfolio-footer__header:hover{
+    color: var(--ornaments, orange);
+}
+
+.portfolio-buttons__link{
+    color: white;
+    font-size: 1.5em;
+    padding: 10px 15px;
+    transition: .5s;
+}
+.portfolio-buttons__link:hover{
+    color: var(--ornaments, orange);
+}
+
+.portfolio-buttons{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
 }
 
 @media (min-width: 1px) and (max-width: 480px) {
@@ -316,14 +206,6 @@
     .portfolio-hover__live, .portfolio-hover__code{
         margin: 10px 20px;
         width: 130px;
-    }
-    .stopwatch-hover__live, .stopwatch-hover__code{
-        font-size: 1em;
-        font-weight: 700;
-        margin: 10px 20px;
-        width: 130px;
-        padding: 15px 0px 15px;
-        margin-bottom: 1em;
     }
     .portfolio{
         margin-bottom: 62px;
@@ -435,9 +317,31 @@
         display: block;
         max-width: 100%;
     }
-
 }
 
+@media (min-width: 769px) and (max-width: 1350px){
+    .stopwatch-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .stopwatch-footer__header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .stopwatch-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+ /*   .stopwatch-footer__link{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }    */
+}
 /*
 .portfolio-items__image{
     object-fit: fill;
