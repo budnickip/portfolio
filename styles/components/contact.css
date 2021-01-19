@@ -190,6 +190,16 @@
      color: white;
      font-weight: 700;
  }
+ 
+ .nameTextError, .emailTextError{
+    font-size: 0.8rem;
+    font-style: italic;
+    color: red;
+ }
+
+ .nameInputError, .emailInputError{
+    border: 2px solid red;
+ }
 
 @media (min-width: 1px) and (max-width: 480px) {
     .contact-details::before{
