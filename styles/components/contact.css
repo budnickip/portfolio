@@ -191,13 +191,13 @@
      font-weight: 700;
  }
  
- .nameTextError, .emailTextError{
+ .nameTextError, .emailTextError, .messageTextError{
     font-size: 0.8rem;
     font-style: italic;
     color: red;
  }
 
- .nameInputError, .emailInputError{
+ .nameInputError, .emailInputError, .messageInputError{
     border: 2px solid red;
  }
 
