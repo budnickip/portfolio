@@ -214,11 +214,11 @@
     }
     .contact-box{
         width: 90%;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: unset;
         grid-template-columns: 100%;
     }
     .contact-text{
-        padding: 0px 0px 2em 34px;
+        padding: 0px 0px 6em 34px;
     }
     .contact-adress{
         padding-left: 34px;
@@ -244,11 +244,11 @@
     }
     .contact-box{
         width: 90%;
-        grid-template-rows: 40% 60%;
+        grid-template-rows: unset;
         grid-template-columns: 100%;
     }
     .contact-text{
-        padding: 0px 0px 2em 34px;
+        padding: 0px 0px 6em 34px;
     }
     .fa-paper-plane{
         font-size: 30px;
