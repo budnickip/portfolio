@@ -27,33 +27,69 @@
 }
 
 .skills-item{
-    min-width: 80px;
+    width: 250px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     padding-top: 25px;
 }
 
-.skills-item__img{
+.skills-item__icon{
     opacity: 0;
     transform: translateX(30px);
     transition: 1s;
+    font-size: 83px;
+    color: var(--ornaments, orange);
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px 10px;
+    transition: 1s;
+}
+
+.skills-item:nth-child(1) .skills-item__icon{
+    animation: rotateIcon;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-delay: 5s;
+}
+
+.skills-item:nth-child(7) .skills-item__icon{
+    animation: rotateIcon;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-delay: 2s;
+}
+
+.skills-item:nth-child(4) .skills-item__icon{
+    animation: rotateIcon;
+    animation-duration: 10s;
+    animation-iteration-count:infinite;
+    animation-delay: 7s;
+}
+
+
+@keyframes rotateIcon{
+    20%{transform: rotateY(0deg);}
+    30%{transform: rotateY(180deg);}
+    40%{transform: rotateY(0deg);}
+}
+
+
+
+.iconify{
+    font-size: 95px;
 }
 .activeSkill{
     opacity: 1;
     transform: translateX(0px);
 }
 
-.skills-item:nth-child(2){
-    border-right: 4px dashed var(--ornaments, orange);
-    border-left: 4px dashed var(--ornaments, orange);
-}
 
 .skills-item__header{
     width: 100%;
     font-size: 1.3em;
     font-weight: 700;
-    color: var(--ornaments, orange);
+    color: var(--contactorange, orange);
     display: flex;
     justify-content: center;
     padding: 10px 0px 10px;
@@ -67,10 +103,6 @@
     justify-content: center;
 }
 
-.fa-react{
-    font-size: 83px;
-    color: var(--blacktext, black);
-}
 
 .skills-back{
     background-color: var(--greyback, grey);
@@ -80,10 +112,6 @@
 }
 
 @media (min-width: 1px) and (max-width: 480px) {
-    .skills-item:nth-child(2){
-        border-right-color: white;
-        border-left-color: white;
-    }
     .skills-info{
         width: 90vw;
         padding: 10px;
@@ -92,10 +120,6 @@
 }
 
 @media (min-width: 481px) and (max-width: 768px){
-    .skills-item:nth-child(2){
-        border-right-color: white;
-        border-left-color: white;
-    }
 
     .skills-info{
         width: 90vw;

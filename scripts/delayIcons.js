@@ -8,7 +8,7 @@ const delayIcons = () =>{
         }
     })  
     window.addEventListener('scroll', ()=>{
-        const skillsItem = document.querySelectorAll('.skills-item__img')
+        const skillsItem = document.querySelectorAll('.skills-item__icon')
     
         skillsItem.forEach(skill => {
             if(skill.getBoundingClientRect().top < window.innerHeight){
