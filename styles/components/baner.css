@@ -45,21 +45,30 @@
     font-weight: 700;
     letter-spacing: 0.02em;
     margin-bottom: 10px;
-    opacity: 0;
-    animation-name: baner-text;
-    animation-duration: 4s;
-    animation-timing-function: linear;
     position: relative;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
 }
 
-@keyframes baner-text {
-    0% {left: -500px; opacity: 0;}
-    25% {left: -200px; opacity: 1;}
-    50% {left: 0px}
-    75% {left: 200px}
-    100% {left: 0px; opacity: 1;}
+.baner-text__typed-text{
+    color: var(--ornaments, orange);
+    font-weight: 600;
+}
+
+.baner-text__cursor{
+    display: inline-block;
+    width: 3px;
+    background-color: #fff;
+    margin-left: 0.1rem;
+    animation: blink 1s infinite;
+}
+.baner-text__cursor.typing{
+    animation: none;
+}
+@keyframes blink {
+    0%{ background-color: #fff;}
+    49%{ background-color: #fff;}
+    50%{ background-color: transparent;}
+    99%{ background-color: transparent;}
+    100%{ background-color: #fff;}
 }
 
 .baner-text__icons a{

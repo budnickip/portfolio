@@ -1,20 +1,5 @@
-import menu from './menu.js'
-import scrollingTop from './scrollingTop.js'
-import hideNavbar from './hideNavbar.js'
-import delayIcons from './delayIcons.js'
-import sendingMail from './sendingMail.js'
-import validateForm from './validateForm.js'
-
-
-menu()
-scrollingTop()
-hideNavbar()
-delayIcons()
-sendingMail()
-validateForm()
-
 const typedTextSpan = document.querySelector('.baner-text__typed-text')
-const cursorSpan = document.querySelector('.baner-text__cursor')
+
 const textArray = ["Patryk", "IT engineer", "Front-end Developer", "programming enthusiast"]
 const typingDelay = 200;
 const erasingDelay = 100;
@@ -24,27 +9,23 @@ let charIndex = 0;
 
 function type() {
     if(charIndex < textArray[textArrayIndex].length){
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing")
         typedTextSpan.textContent += textArray[textArrayIndex].charAt(charIndex)
         charIndex++;
         setTimeout(type, typingDelay)
     }else{
-        cursorSpan.classList.remove("typing")
         setTimeout(erase, newTextDelay)
     }
 }
 
 function erase() {
     if(charIndex > 0){
-        if(!cursorSpan.classList.contains("typing")) cursorSpan.classList.add("typing")
         typedTextSpan.textContent = textArray[textArrayIndex].substring(0, charIndex-1)
         charIndex--;
         setTimeout(erase, erasingDelay)
     }else{
-        cursorSpan.classList.remove("typing")
         textArrayIndex++;
         if(textArrayIndex>=textArray.length) textArrayIndex = 0
-        setTimeout(type, typingDelay + 1100)
+        setTimeout(type, typingDelay)
     }
 }
 
@@ -52,4 +33,4 @@ document.addEventListener("DOMContentLoaded", function(){
     setTimeout(type, newTextDelay + 250)
 }) 
 
-
+export default type
