@@ -1,0 +1,96 @@
+.about-me{
+    background-color: var(--greyback, grey);
+    width: 70%;
+    padding-bottom: 75px;
+    padding-left: 10%;
+    &__header{
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.8em;
+        color: var(--customtext, black);
+        padding: 17px 0px 27px 52px;
+    }
+}
+
+.about-info{
+    background: #ffffff;
+    width: 80vw;
+    padding: 20px;
+    -webkit-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.about-photo{
+    width: 150px;
+    height: 150px;
+    /* only for github*/
+    background-image: url("https://budnickip.github.io/portfolio/images/myphoto.jpg");
+    /*background-image: url("/images/myphoto.jpg"); */
+    background-size: contain;
+    background-repeat: no-repeat; 
+    border-radius: 50%;
+    padding-bottom: 20px;
+    opacity: 0;
+    transform:translateX(-100px);
+    transition: 1s;
+}
+.activePhoto{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.about-details{
+    padding: 20px 20px 20px 40px;
+    /*dodaj padding-top dla mniejszych rozdzielczosci */ 
+    border-right: 4px dashed var(--ornaments, orange);
+    &__list{
+        list-style: none;
+        font-weight: 700;
+        color: var(--ornaments, orange);
+    }
+    &__span{
+        color: var(--customtext, black);
+    }
+    &__link{
+        color: var(--ornaments, orange);
+        text-decoration: none;
+    }
+}
+
+
+.about-description{
+    width: 300px;
+    padding: 20px 0px 20px 20px;
+    flex-grow: 1;
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .about-details{
+        border-right-color: white;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .about-details{
+        border-right-color: white;
+    }
+    .about-me{
+        padding-left: 5%;
+    }
+    .about-info{
+        width: 90vw;
+        padding: 10px;
+    }
+}

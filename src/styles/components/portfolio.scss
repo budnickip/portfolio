@@ -1,0 +1,311 @@
+.portfolio{
+    margin-top: 43px;
+    margin-bottom: 36px;
+    width: 100%;
+
+    &__header{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.8em;
+        color: var(--customtext, black);
+        padding-bottom: 20px;
+    }
+    
+}
+
+.portfolio-items{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 346px 345px;
+    position: relative;
+}
+
+.calc{
+    background-color: #182C61;
+   /* background-image: url("../../images/calc.png"); */
+    background-repeat: no-repeat;
+    background-size: contain;
+    grid-column: 6/9;
+    grid-row: 1;
+    position: relative;
+}
+.starWars{
+    background-color:#2ecc71;
+    grid-column: 1/5;
+    grid-row: 2;
+  /*  background-image: url("../../images/star_wars.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.bookSearching{
+    background-color: #1f2427;
+    grid-column: 1/4;
+    grid-row: 1;
+  /*  background-image: url("../../images/bookSearching.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.stopwatch{
+    background-color: #192a56;
+    grid-column: 4/6;
+    grid-row: 1;
+ /*   background-image: url("../../images/stopwatch.png"); */
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.zonex{
+    background-color: blue;
+    grid-column: 5/9;
+    grid-row: 2;
+    /*background-image: url("../../images/zonex.png"); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.portfolio-item:hover .portfolio-hover{
+    opacity: 1;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 154, 61, 0.5) 100%);
+}
+
+
+.portfolio-hover{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 0;
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    transition: .5s;
+
+    &__paragraph{
+        word-wrap: break-word; 
+        color: #ffffff;
+        font-size: 0.9em;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        padding-left: 36px;
+    }
+} 
+
+
+.portfolio-description{
+    margin-top: 2rem;
+}
+.portfolio-footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    /*background-color: #515151; */
+    background-color: var(--contactorange, orange);
+    justify-content: space-between;
+
+    &__header{
+        color: white;
+        font-size: 1.5em;
+        padding: 10px 15px;
+        transition: .5s;
+    }
+}
+
+
+.portfolio-buttons{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+
+    &__link{
+        color: white;
+        font-size: 1.5em;
+        padding: 10px 15px;
+        transition: .3s;
+    
+        &:hover{
+            transform: translateY(-4px);
+        }
+    }
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+    .portfolio-items{
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+    }
+    .calc{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bookSearching{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .starWars{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .stopwatch{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .zonex{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 5;
+    }
+    .portfolio-hover{
+        opacity: 1;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 154, 61, 0.5) 100%);
+
+        &__header{
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2em;
+            padding: 8px 0px 8px 10px;
+        }
+
+        &__paragraph{
+            padding-left: 10px;
+        }
+
+        &__live, &__code{
+            margin: 10px 20px;
+            width: 130px;
+        }
+    }
+    .portfolio{
+        margin-bottom: 62px;
+    }
+
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+    .portfolio-items{
+        grid-template-columns: 100%;
+        grid-template-rows: 300px 300px 300px 300px 300px;
+    }
+    .calc{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bookSearching{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .starWars{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .stopwatch{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .zonex{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 5;
+    }
+
+    .portfolio-hover{
+        opacity: 1;
+        height: 100%;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(255, 154, 61, 0.5) 100%);
+
+        &__header{
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 1.2em;
+            padding: 8px 0px 8px 10px;
+        }
+
+        &__paragraph{
+            padding-left: 10px;
+        }
+
+        &__live, &__code{
+            margin: 10px 20px;
+            width: 130px;
+        }
+    }
+
+    .stopwatch-hover__live, .stopwatch-hover__code{
+        font-size: 1em;
+        font-weight: 700;
+        margin: 10px 20px;
+        width: 130px;
+        padding: 15px 0px 15px;
+        margin-bottom: 1em;
+    }
+    .portfolio{
+        margin-bottom: 62px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1024px){
+    .portfolio-items{
+        grid-template-columns: 100%;
+        grid-template-rows: 360px 360px 360px 360px 360px;
+    }
+    .calc{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .bookSearching{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .starWars{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .stopwatch{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .zonex{
+        width: 100%;
+        grid-column: 1;
+        grid-row: 5;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1350px){
+    .stopwatch-footer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        &__header{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    .stopwatch-buttons{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}

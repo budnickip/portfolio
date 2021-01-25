@@ -1,0 +1,37 @@
+@import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import './components/navigation.scss';
+@import './components/baner.scss';
+@import './components/aboutMe.scss';
+@import './components/skills.scss';
+@import './components/portfolio.scss';
+@import './components/contact.scss';
+@import './components/footer.scss';
+@import './components/arrow.scss';
+
+@import './layout/header.scss';
+@import './layout/main.scss';
+@import './layout/footer.scss';
+
+@import './base/base.scss';
+
+@import './abstracts/variables.scss';
+
+.baner{
+   background-image: url('../assets/cover_photo.png');
+}
+
+.calc{
+    background-image: url("../assets/calc.png"); 
+}
+.starWars{
+    background-image: url("../assets/star_wars.png"); 
+}
+.bookSearching{
+    background-image: url("../assets/book-searching.png");
+}
+.stopwatch{
+    background-image: url("../assets/stopwatch.png");
+}
+.zonex{
+    background-image: url("../assets/zonex.png"); 
+}

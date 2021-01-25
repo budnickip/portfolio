@@ -1,0 +1,228 @@
+.baner{
+    /*background-image: url('../../images/cover_photo.png'); */
+  /*  background-image: url('~../../assets/cover_photo.png'); */
+    width: 100%;
+    height: 95vh;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    &__photo{
+        width: 100%;
+        max-height: 100%;
+        position: relative;
+        z-index: -1;
+    }
+
+    &__layer{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        mix-blend-mode: lighten;
+    }
+}
+
+.baner-text{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 16px;
+
+    &__header{
+        color: var(--ornaments, orange);
+        font-size: 5.5em;
+        line-height: 6rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+    }
+
+    &__paragraph{
+        color: #fff;
+        font-size: 2em;
+        line-height: 2.5rem;
+        font-weight: 700;
+        letter-spacing: 0.02em;
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    &__typed-text{
+        color: var(--ornaments, orange);
+        font-weight: 600;
+    }
+
+    &__cursor{
+        display: inline-block;
+        width: 3px;
+        background-color: #fff;
+        margin-left: 0.1rem;
+        animation: blink 1s infinite;
+    }
+
+    &__cursor.typing{
+        animation: none;
+    }
+
+    &__icons a{
+        color: white;
+        font-size: 1.5em;
+        background-color: var(--ornaments, orange);
+        margin: 6px;
+        transition: .5s;
+    }
+
+    &__icons a:hover{
+        color: var(--ornaments, orange);
+        background-color: white;
+    }
+}
+
+
+@keyframes blink {
+    0%{ background-color: #fff;}
+    49%{ background-color: #fff;}
+    50%{ background-color: transparent;}
+    99%{ background-color: transparent;}
+    100%{ background-color: #fff;}
+}
+
+.icon-color{
+    transform: scale(1.4); 
+}
+.baner-contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 40px 0px;
+
+    &__paragraph{
+        text-align: center;
+        font-size: 2rem;
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+}
+
+.baner-contant__button{
+    background: white;
+    color: var(--ornaments, orange);
+    font-size: 1em;
+    font-weight: 700;
+    box-sizing: border-box;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    cursor: pointer;
+    position: relative;
+}
+/* jak chcę zrobić border powyżej, a nie na pseudoklasie after
+to przy hoverze zostaje mi puste miejsce u góry i na dole, nie wiem jak to naprawić, dlatego
+znalazłem inne, działające rozwiązanie*/
+.baner-contant__button::after{
+    content: '';
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    z-index: 50;
+}
+
+.baner-contant__button::before{
+    content: 'Contact me!';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+}
+.baner-contant__button:hover::before, .baner-contant__button:focus::before {
+    animation: btn-contact 1s forwards;
+}
+
+@keyframes btn-contact {
+    100% {
+      opacity: 1;
+    }
+  }
+
+
+.baner-contact__link{
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.baner-contact__link::before{
+    content: 'Check my CV';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+.baner-contact__link:hover::before, .baner-contact__link:focus::before {
+    animation: btn-contact 1s forwards;
+}
+
+@media (min-width: 1px) and (max-width: 480px) {
+   /*  .baner-text{
+        font-size: 10px;
+        /*top: 5px; 
+    } */
+    .baner-text__header{
+        line-height: 3rem;
+        font-size: 4em;
+    } 
+    .baner{
+        height: 70vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px){
+   /* .baner-text{
+        font-size: 12px;
+        top: 5px; 
+    } */
+    .baner-text__header{
+        line-height: 5rem;
+        font-size: 4em;
+    } 
+    .baner{
+        height: 70vh;
+    }
+}
