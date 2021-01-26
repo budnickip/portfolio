@@ -25,7 +25,10 @@
 
 .calc{
     background-color: #182C61;
-   /* background-image: url("../../images/calc.png"); */
+   /* background-image: url("../../images/calc.png"); 
+   jakbym szukał w przyszłości rozwiązania - linki do obrazków muszą być takie, jakby były z głównego stylu.css
+   (jest tak tylko przy webpacku)*/
+    background-image: url("../assets/calc.png"); 
     background-repeat: no-repeat;
     background-size: contain;
     grid-column: 6/9;
@@ -37,6 +40,7 @@
     grid-column: 1/5;
     grid-row: 2;
   /*  background-image: url("../../images/star_wars.png"); */
+    background-image: url("../assets/star_wars.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -46,6 +50,7 @@
     grid-column: 1/4;
     grid-row: 1;
   /*  background-image: url("../../images/bookSearching.png"); */
+    background-image: url("../assets/book-searching.png");
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -55,6 +60,7 @@
     grid-column: 4/6;
     grid-row: 1;
  /*   background-image: url("../../images/stopwatch.png"); */
+    background-image: url("../assets/stopwatch.png");
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
@@ -64,6 +70,7 @@
     grid-column: 5/9;
     grid-row: 2;
     /*background-image: url("../../images/zonex.png"); */
+    background-image: url("../assets/zonex.png"); 
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
