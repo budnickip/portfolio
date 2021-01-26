@@ -1,6 +1,6 @@
 const makeSlider = () => {
     new Glider(document.querySelector('.glider'), {
-      slidesToShow: 1.25,
+      slidesToShow: 1.1,
       slidesToScroll: 1,
       draggable: true,
       rewind: true,
