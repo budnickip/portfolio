@@ -1,6 +1,6 @@
 const makeSlider = () => {
     new Glider(document.querySelector('.glider'), {
-      slidesToShow: 1.1,
+      slidesToShow: 0.8,
       slidesToScroll: 1,
       draggable: true,
       rewind: true,
@@ -15,6 +15,13 @@ const makeSlider = () => {
               next: '.glider-next'
             },
           }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1.2,
+              slidesToScroll: 1
+            }
         }
       ]
     });
