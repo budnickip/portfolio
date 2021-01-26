@@ -66,6 +66,12 @@
 }
 
 
+@media (min-width: 1px) and (max-width: 768px) {
+    .glider-card__image{
+        height: 50vh;
+    }
+}
+
 @media (min-width: 1px) and (max-width: 1150px){
     .glider-next, .glider-prev{
         display: none;
