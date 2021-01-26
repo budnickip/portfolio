@@ -1,4 +1,6 @@
 @import "../../node_modules/@fortawesome/fontawesome-free/css/all.css";
+@import "~glider-js/glider.min.css";
+
 @import './components/navigation.scss';
 @import './components/baner.scss';
 @import './components/aboutMe.scss';
@@ -7,6 +9,7 @@
 @import './components/contact.scss';
 @import './components/footer.scss';
 @import './components/arrow.scss';
+@import './components/slider.scss';
 
 @import './layout/header.scss';
 @import './layout/main.scss';
