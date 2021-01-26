@@ -21,6 +21,7 @@
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: 346px 345px;
     position: relative;
+    z-index: 3;
 }
 
 .calc{
@@ -34,17 +35,12 @@
     grid-column: 6/9;
     grid-row: 1;
     position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1s;
 }
-.starWars{
-    background-color:#2ecc71;
-    grid-column: 1/5;
-    grid-row: 2;
-  /*  background-image: url("../../images/star_wars.png"); */
-    background-image: url("../assets/star_wars.png"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-}
+
+
 .bookSearching{
     background-color: #1f2427;
     grid-column: 1/4;
@@ -54,7 +50,12 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
 }
+
+
 .stopwatch{
     background-color: #192a56;
     grid-column: 4/6;
@@ -64,7 +65,26 @@
     background-size: contain;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 1s;
 }
+
+.starWars{
+    background-color:#2ecc71;
+    grid-column: 1/5;
+    grid-row: 2;
+  /*  background-image: url("../../images/star_wars.png"); */
+    background-image: url("../assets/star_wars.png"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    opacity: 0;
+    transform: translateX(50px);
+    transition: 1s;
+}
+
+
 .zonex{
     background-color: blue;
     grid-column: 5/9;
@@ -74,6 +94,9 @@
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 1s;
 }
 
 .portfolio-item:hover .portfolio-hover{
@@ -143,6 +166,121 @@
     }
 }
 
+.portfolio-more{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 1em;
+}
+
+
+.button-portfolio{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-more__button{
+    background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+    text-decoration: none;
+    font-size: 1em;
+    color: white;
+    font-weight: 700;
+    border-radius: 15px;
+    border: none;
+    margin: 10px 40px;
+    width: 200px;
+    padding: 15px 0px 15px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+}
+
+.portfolio-more__button::before{
+    content: 'More';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    color: var(--ornaments, orange);
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    border: 1px solid var(--ornaments, orange);
+    border-radius: 15px;
+    background: white;
+}
+
+.portfolio-more__button:hover::before, .portfolio-more__button:focus::before{
+    animation: btn-more 1s forwards;
+}
+
+.portfolio-items-more{
+    width: 100%;
+    display: none;
+    opacity: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.show-more-items{
+    display: flex;
+    animation: show-more 1s forwards;
+}
+
+@keyframes show-more{
+    10%{
+        transform: translateY(-1000px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+.markDown{
+    background-image: url("../assets/markDown.png");
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+.quoteMachine{
+    background-image: url("../assets/quoteMachine.png");
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+.toDoList{
+    background-image: url("../assets/toDoList.png");
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+.drumMachine{
+    background-image: url("../assets/drum_machine.png");
+    background-size: cover;
+    width: 50%;
+    height: 300px;
+    position: relative;
+}
+
+@keyframes btn-more {
+    100% {
+      opacity: 1;
+    }
+  }
+
 @media (min-width: 1px) and (max-width: 480px) {
     .portfolio-items{
         grid-template-columns: 100%;
@@ -152,26 +290,31 @@
         width: 100%;
         grid-column: 1;
         grid-row: 1;
+        transform: translateX(-50px);
     }
     .bookSearching{
         width: 100%;
         grid-column: 1;
         grid-row: 2;
+        transform: translateX(-50px);
     }
     .starWars{
         width: 100%;
         grid-column: 1;
         grid-row: 3;
+        transform: translateX(-50px);
     }
     .stopwatch{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
+        transform: translateX(-50px);
     }
     .zonex{
         width: 100%;
         grid-column: 1;
         grid-row: 5;
+        transform: translateX(-50px);
     }
     .portfolio-hover{
         opacity: 1;
@@ -197,6 +340,18 @@
     .portfolio{
         margin-bottom: 62px;
     }
+    .markDown{
+        width: 100%;
+    }
+    .quoteMachine{
+        width: 100%;
+    }
+    .toDoList{
+        width: 100%;
+    }
+    .drumMachine{
+        width: 100%;
+    }
 
 }
 
@@ -209,26 +364,31 @@
         width: 100%;
         grid-column: 1;
         grid-row: 1;
+        transform: translateX(-50px);
     }
     .bookSearching{
         width: 100%;
         grid-column: 1;
         grid-row: 2;
+        transform: translateX(-50px);
     }
     .starWars{
         width: 100%;
         grid-column: 1;
         grid-row: 3;
+        transform: translateX(-50px);
     }
     .stopwatch{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
+        transform: translateX(-50px);
     }
     .zonex{
         width: 100%;
         grid-column: 1;
         grid-row: 5;
+        transform: translateX(-50px);
     }
 
     .portfolio-hover{
@@ -264,6 +424,18 @@
     .portfolio{
         margin-bottom: 62px;
     }
+    .markDown{
+        width: 100%;
+    }
+    .quoteMachine{
+        width: 100%;
+    }
+    .toDoList{
+        width: 100%;
+    }
+    .drumMachine{
+        width: 100%;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 1024px){
@@ -275,26 +447,43 @@
         width: 100%;
         grid-column: 1;
         grid-row: 1;
+        transform: translateX(-50px);
     }
     .bookSearching{
         width: 100%;
         grid-column: 1;
         grid-row: 2;
+        transform: translateX(-50px);
     }
     .starWars{
         width: 100%;
         grid-column: 1;
         grid-row: 3;
+        transform: translateX(-50px);
     }
     .stopwatch{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
+        transform: translateX(-50px);
     }
     .zonex{
         width: 100%;
         grid-column: 1;
         grid-row: 5;
+        transform: translateX(-50px);
+    }
+    .markDown{
+        width: 100%;
+    }
+    .quoteMachine{
+        width: 100%;
+    }
+    .toDoList{
+        width: 100%;
+    }
+    .drumMachine{
+        width: 100%;
     }
 }
 
@@ -315,4 +504,29 @@
         display: flex;
         justify-content: center;
     }
+}
+
+.activeFirst{
+    opacity: 1;
+    transform: translateX(0px);
+} 
+
+.activeSecond{
+    opacity: 1;
+    transform: translateX(0px);
+} 
+
+.activeThird{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.activeFourth{
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.activeFifth{
+    opacity: 1;
+    transform: translateX(0px);
 }

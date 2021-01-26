@@ -10,6 +10,7 @@ import sendingMail from './scripts/sendingMail.js'
 import validateForm from './scripts/validateForm.js'
 import type from './scripts/typing.js'
 import makeSlider from './scripts/slider.js'
+import showMore from './scripts/showMore'
 
 
 menu()
@@ -20,6 +21,7 @@ delayIcons()
 makeSlider()
 sendingMail()
 validateForm()
+showMore()
 
 
 
