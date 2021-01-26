@@ -8,7 +8,7 @@ const makeSlider = () => {
         {
           breakpoint: 1150,
           settings: {
-            slidesToShow: 1.25,
+            slidesToShow: 1.5,
             slidesToScroll: 1,
             arrows: {
               prev: '.glider-prev',

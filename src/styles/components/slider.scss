@@ -66,9 +66,27 @@
 }
 
 
-@media (min-width: 1px) and (max-width: 768px) {
+@media (min-width: 1px) and (max-width: 350px) {
+    .glider-card__image{
+        height: 35vh;
+    }
+}
+
+@media (min-width: 351px) and (max-width: 480px) {
+    .glider-card__image{
+        height: 40vh;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
     .glider-card__image{
         height: 50vh;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 900px) {
+    .glider-card__image{
+        height: 60vh;
     }
 }
 
