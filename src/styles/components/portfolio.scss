@@ -243,36 +243,36 @@
     }
 }
 
-.markDown{
-    background-image: url("../assets/markDown.png");
+.portfolio-more-details{
     background-size: cover;
     width: 50%;
     height: 300px;
     position: relative;
+}
+
+.markDown{
+    background-image: url("../assets/markDown.png");
+    @extend .portfolio-more-details;
 }
 
 .quoteMachine{
     background-image: url("../assets/quoteMachine.png");
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-    position: relative;
+    @extend .portfolio-more-details;
 }
 
 .toDoList{
     background-image: url("../assets/toDoList.png");
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-    position: relative;
+    @extend .portfolio-more-details;
 }
 
 .drumMachine{
     background-image: url("../assets/drum_machine.png");
-    background-size: cover;
-    width: 50%;
-    height: 300px;
-    position: relative;
+    @extend .portfolio-more-details;
+}
+
+.firstAid{
+    background-image: url("../assets/wyleczto.png");
+    @extend .portfolio-more-details;
 }
 
 @keyframes btn-more {
@@ -340,19 +340,9 @@
     .portfolio{
         margin-bottom: 62px;
     }
-    .markDown{
+    .portfolio-more-details{
         width: 100%;
     }
-    .quoteMachine{
-        width: 100%;
-    }
-    .toDoList{
-        width: 100%;
-    }
-    .drumMachine{
-        width: 100%;
-    }
-
 }
 
 @media (min-width: 481px) and (max-width: 768px){
@@ -424,16 +414,7 @@
     .portfolio{
         margin-bottom: 62px;
     }
-    .markDown{
-        width: 100%;
-    }
-    .quoteMachine{
-        width: 100%;
-    }
-    .toDoList{
-        width: 100%;
-    }
-    .drumMachine{
+    .portfolio-more-details{
         width: 100%;
     }
 }
@@ -473,16 +454,7 @@
         grid-row: 5;
         transform: translateX(-50px);
     }
-    .markDown{
-        width: 100%;
-    }
-    .quoteMachine{
-        width: 100%;
-    }
-    .toDoList{
-        width: 100%;
-    }
-    .drumMachine{
+    .portfolio-more-details{
         width: 100%;
     }
 }
@@ -505,6 +477,7 @@
         justify-content: center;
     }
 }
+
 
 .activeFirst{
     opacity: 1;

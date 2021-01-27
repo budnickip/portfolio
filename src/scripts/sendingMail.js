@@ -31,7 +31,8 @@ sendButton.addEventListener("click", function(event){
         let myForm = document.querySelector(".contact-form__form");
         myForm.innerHTML = `<div class="contact-form__confirmation">
         <h4>Thank you!</h4>
-        <p>Your message has been successfully sent.<p>
+        <p>Sorry, in github I can't send emails with PHP :(. Just write email to me: p.budnicki95@gmail.com</p>
+        <p>Your message has been successfully sent.</p>
         </div>`
     }else{
         event.preventDefault()

@@ -112,6 +112,7 @@
 }
 
 .baner-contant__button{
+    text-decoration: none;
     background: white;
     color: var(--ornaments, orange);
     font-size: 1em;
@@ -123,6 +124,7 @@
     padding: 15px 0px 15px;
     cursor: pointer;
     position: relative;
+    text-align: center;
 }
 /* jak chcę zrobić border powyżej, a nie na pseudoklasie after
 to przy hoverze zostaje mi puste miejsce u góry i na dole, nie wiem jak to naprawić, dlatego
