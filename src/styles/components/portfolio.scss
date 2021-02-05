@@ -24,14 +24,13 @@
     z-index: 3;
 }
 
-.calc{
-    background-color: #182C61;
-   /* background-image: url("../../images/calc.png"); 
+.library{
+   /* background-image: url("../../images/library.png"); 
    jakbym szukał w przyszłości rozwiązania - linki do obrazków muszą być takie, jakby były z głównego stylu.css
    (jest tak tylko przy webpacku)*/
-    background-image: url("../assets/calc.png"); 
+    background-image: url("../assets/library.png"); 
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     grid-column: 6/9;
     grid-row: 1;
     position: relative;
@@ -275,6 +274,11 @@
     @extend .portfolio-more-details;
 }
 
+.calc{
+    background-image: url("../assets/calc.png");
+    @extend .portfolio-more-details;
+}
+
 @keyframes btn-more {
     100% {
       opacity: 1;
@@ -286,7 +290,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 300px 300px 300px 300px 300px;
     }
-    .calc{
+    .library{
         width: 100%;
         grid-column: 1;
         grid-row: 1;
@@ -350,7 +354,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 300px 300px 300px 300px 300px;
     }
-    .calc{
+    .library{
         width: 100%;
         grid-column: 1;
         grid-row: 1;
@@ -424,7 +428,7 @@
         grid-template-columns: 100%;
         grid-template-rows: 360px 360px 360px 360px 360px;
     }
-    .calc{
+    .library{
         width: 100%;
         grid-column: 1;
         grid-row: 1;
