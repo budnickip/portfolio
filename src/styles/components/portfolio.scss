@@ -55,19 +55,22 @@
 }
 
 
-.stopwatch{
-    background-color: #192a56;
+.caveral{
+    //background-color: #192a56;
+    background-color: white;
     grid-column: 4/6;
     grid-row: 1;
  /*   background-image: url("../../images/stopwatch.png"); */
-    background-image: url("../assets/stopwatch.png");
-    background-size: contain;
+    background-image: url("../assets/caveralLarge.png");
+    background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     opacity: 0;
     transform: translateY(50px);
     transition: 1s;
 }
+
+
 
 .starWars{
     background-color:#2ecc71;
@@ -279,6 +282,11 @@
     @extend .portfolio-more-details;
 }
 
+.stopwatch{
+    background-image: url("../assets/stopwatch.png"); 
+    @extend .portfolio-more-details;
+}
+
 @keyframes btn-more {
     100% {
       opacity: 1;
@@ -308,7 +316,7 @@
         grid-row: 3;
         transform: translateX(-50px);
     }
-    .stopwatch{
+    .caveral{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
@@ -372,7 +380,7 @@
         grid-row: 3;
         transform: translateX(-50px);
     }
-    .stopwatch{
+    .caveral{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
@@ -446,7 +454,7 @@
         grid-row: 3;
         transform: translateX(-50px);
     }
-    .stopwatch{
+    .caveral{
         width: 100%;
         grid-column: 1;
         grid-row: 4;
